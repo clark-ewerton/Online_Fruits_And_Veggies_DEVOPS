@@ -1,11 +1,11 @@
-version: "3.8"
+version: "3.3"
 services:
   web:
     build: .
     ports:
       - "80:80"
     volumes:
-      - "/home/ec2-user/EAPP/CI_CD_Pipeline_main:/usr/local/apache2/htdocs/"
+      - "/home/ec2-user/EAPP/Build:/usr/local/apache2/htdocs/"
       - "logvolume01:/var/log"
 volumes:
   logvolume01: {}
